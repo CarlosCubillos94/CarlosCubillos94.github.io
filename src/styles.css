@@ -26,3 +26,4 @@ ul{margin:.8rem 0 0;padding-left:1.2rem}
 .contact{list-style:none;padding:0}.contact li{margin:.4rem 0}
 footer{text-align:center;color:var(--muted);padding:2rem;font-size:.9rem}
 @media (max-width:640px){.nav nav{display:none}.hero{padding:4rem 0 3rem}}
+.repo{display:inline-block;margin-top:1rem;font-weight:600}

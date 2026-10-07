@@ -16,8 +16,8 @@ const experience = [
 ];
 
 const projects = [
-  { name: 'GymFlow Web', desc: 'Personal project: web admin for a gym management platform, built from scratch.', tags: ['Vite', 'React', 'TypeScript'] },
-  { name: 'GymFlow Mobile', desc: 'Personal project: member mobile app for the same gym management platform, built from scratch.', tags: ['Expo', 'React Native', 'TypeScript'] },
+  { name: 'GymFlow Web', desc: 'Personal project: web admin for a gym management platform, built from scratch.', tags: ['Vite', 'React', 'TypeScript'], url: 'https://github.com/CarlosCubillos94/gymflow-web' },
+  { name: 'GymFlow Mobile', desc: 'Personal project: member mobile app for the same gym management platform, built from scratch.', tags: ['Expo', 'React Native', 'TypeScript'], url: 'https://github.com/CarlosCubillos94/gymflow-mobile' },
 ];
 
 const skills = ['React', 'React Native', 'Expo', 'TypeScript', 'JavaScript', 'Next.js', 'Firebase', 'Material UI', 'Node.js'];
@@ -64,7 +64,8 @@ export default function App() {
       <section id="projects"><h3>Projects</h3>
         <div className="grid">{projects.map(p => (
           <article className="card" key={p.name}><h4>{p.name}</h4><p>{p.desc}</p>
-            <div className="tags">{p.tags.map(t => <span key={t}>{t}</span>)}</div></article>))}</div>
+            <div className="tags">{p.tags.map(t => <span key={t}>{t}</span>)}</div>
+            <a className="repo" href={p.url} target="_blank" rel="noreferrer">View on GitHub →</a></article>))}</div>
       </section>
 
       <section id="skills"><h3>Skills</h3>
