@@ -9,18 +9,19 @@ const links = {
 const experience = [
   { company: 'Telefónica Hispam', role: 'Web & Mobile Specialist Engineer', period: 'Oct 2022 – Jun 2026',
     points: ['Helped migrate the Mi Movistar app from NativeScript to React Native.', 'Built the Movistar Pass security module.', 'Tech lead on Mi Movistar Empresas.'] },
-  { company: 'Reflex Chile (own startup)', role: 'Founder', period: 'May 2022 – Present',
+  { company: 'Reflex Chile (own startup)', role: 'React Native & Mobile Developer', period: 'May 2022 – Present',
     points: ['Built a mobile app backed by Firebase.', "Won PUCV's “Emprende tu Tesis” fund."] },
   { company: 'WiTi Chile', role: 'Software Engineer', period: 'Aug 2021 – Oct 2022',
     points: ['Developed web applications with React.js.'] },
 ];
 
 const projects = [
+  { name: 'Fynn', desc: 'Personal project: an offline-first personal finance app where you log expenses in plain language ("uber 4500"). On-device SQLite ledger, category budgets, weekly insights and an optional biometric lock.', tags: ['Expo', 'React Native', 'TypeScript', 'NativeWind', 'Zustand', 'SQLite'], url: 'https://github.com/CarlosCubillos94/fynn' },
   { name: 'GymFlow Web', desc: 'Personal project: web admin for a gym management platform, built from scratch.', tags: ['Vite', 'React', 'TypeScript'], url: 'https://github.com/CarlosCubillos94/gymflow-web' },
   { name: 'GymFlow Mobile', desc: 'Personal project: member mobile app for the same gym management platform, built from scratch.', tags: ['Expo', 'React Native', 'TypeScript'], url: 'https://github.com/CarlosCubillos94/gymflow-mobile' },
 ];
 
-const skills = ['React', 'React Native', 'Expo', 'TypeScript', 'JavaScript', 'Next.js', 'Firebase', 'Material UI', 'Node.js'];
+const skills = ['React', 'React Native', 'Expo', 'TypeScript', 'JavaScript', 'Next.js', 'Firebase', 'Material UI', 'NativeWind', 'Zustand', 'SQLite', 'Node.js'];
 
 export default function App() {
   const [theme, setTheme] = useState<'dark' | 'light'>(() =>
