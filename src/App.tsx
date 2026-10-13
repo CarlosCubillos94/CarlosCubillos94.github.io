@@ -43,6 +43,7 @@ export default function App() {
         <p className="lead">I build web and mobile products with React and React Native, from scoping to production.</p>
         <div className="cta">
           <a className="btn primary" href={`mailto:${links.email}`}>Get in touch</a>
+          <a className="btn world" href="https://carloscubillos94.github.io/world/" target="_blank" rel="noreferrer">🚙 Explore my 3D world →</a>
           <a className="btn" href={links.github} target="_blank" rel="noreferrer">GitHub</a>
           <a className="btn" href={links.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>
         </div>

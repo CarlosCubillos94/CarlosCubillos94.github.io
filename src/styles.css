@@ -27,3 +27,4 @@ ul{margin:.8rem 0 0;padding-left:1.2rem}
 footer{text-align:center;color:var(--muted);padding:2rem;font-size:.9rem}
 @media (max-width:640px){.nav nav{display:none}.hero{padding:4rem 0 3rem}}
 .repo{display:inline-block;margin-top:1rem;font-weight:600}
+.btn.world{border-color:var(--accent);color:var(--accent);background:color-mix(in srgb,var(--accent) 10%,transparent)}.btn.world:hover{background:var(--accent);color:#fff}
