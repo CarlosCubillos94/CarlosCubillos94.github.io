@@ -28,7 +28,7 @@ const shopifyStores = [
   { name: 'Maqui Skin', niche: 'Skincare', img: '/shopify/maqui-skin.webp',
     desc: 'Skincare chileno con un diseño claro y minimalista. Rutinas y packs (bundles), quiz de piel y una tipografía serif que transmite calma.',
     url: 'https://maqui-skin-demo.myshopify.com' },
-  { name: 'Tostaduría Cerro Alegre', niche: 'Café de especialidad', img: '/shopify/cerro-alegre.webp',
+  { name: 'Tostaduría Cerro Alegre', niche: 'Café de especialidad', img: '/shopify/cerro-alegre-v2.webp',
     desc: 'Tostaduría de Valparaíso con un estilo retro y colorido. Suscripciones con descuento, quiz para encontrar tu café y kits de regalo.',
     url: 'https://cerro-alegre-demo.myshopify.com' },
 ];
