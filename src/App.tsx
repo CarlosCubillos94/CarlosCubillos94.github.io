@@ -86,6 +86,7 @@ export default function App() {
 
       <section id="shopify" lang="es"><h3>Portafolio Shopify</h3>
         <p className="muted">Tres tiendas demo construidas desde cero sobre temas Online Store 2.0, cada una en un rubro distinto. Contraseña de las tiendas: disponible a pedido.</p>
+        <p><a className="btn" href="https://carloscubillos94.github.io/shopify-portfolio/" target="_blank" rel="noreferrer">Ver portafolio Shopify completo →</a></p>
         <div className="shop-grid">{shopifyStores.map(st => (
           <article className="card shop" key={st.name}>
             <a href={st.url} target="_blank" rel="noreferrer" className="shot"><img src={st.img} alt={`Portada de la tienda ${st.name}`} loading="lazy" width={1200} height={670}/></a>
