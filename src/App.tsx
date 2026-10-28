@@ -21,6 +21,20 @@ const projects = [
   { name: 'GymFlow Mobile', desc: 'Personal project: member mobile app for the same gym management platform, built from scratch.', tags: ['Expo', 'React Native', 'TypeScript'], url: 'https://github.com/CarlosCubillos94/gymflow-mobile' },
 ];
 
+const shopifyStores = [
+  { name: 'Atacama Wear', niche: 'Ropa outdoor', img: '/shopify/atacama-wear.webp',
+    desc: 'Tienda de ropa con estética editorial oscura, inspirada en Satisfy y en la grilla de District Vision. Drops limitados, fichas de producto legibles y cajón de carrito instantáneo.',
+    url: 'https://atacama-wear-demo.myshopify.com', repo: 'https://github.com/CarlosCubillos94/shopify-demo-theme' },
+  { name: 'Maqui Skin', niche: 'Skincare', img: '/shopify/maqui-skin.webp',
+    desc: 'Skincare chileno con un diseño claro y minimalista. Rutinas y packs (bundles), quiz de piel y una tipografía serif que transmite calma.',
+    url: 'https://maqui-skin-demo.myshopify.com', repo: 'https://github.com/CarlosCubillos94/shopify-maqui-skin' },
+  { name: 'Tostaduría Cerro Alegre', niche: 'Café de especialidad', img: '/shopify/cerro-alegre.webp',
+    desc: 'Tostaduría de Valparaíso con un estilo retro y colorido. Suscripciones con descuento, quiz para encontrar tu café y kits de regalo.',
+    url: 'https://cerro-alegre-demo.myshopify.com', repo: 'https://github.com/CarlosCubillos94/shopify-cerro-alegre' },
+];
+
+const shopifySkills = ['Online Store 2.0 · Liquid', 'Secciones a medida', 'Micro-interacciones estilo Emil Kowalski', 'Cajón de carrito instantáneo', 'Feedback al agregar al carrito', 'Aparición al hacer scroll', 'Accesibilidad AA', 'Áreas táctiles de 44 px', 'Movimiento reducido', 'Localización en español y CLP', 'Importación de catálogo CSV', 'Foco en rendimiento'];
+
 const skills = ['React', 'React Native', 'Expo', 'TypeScript', 'JavaScript', 'Next.js', 'Firebase', 'Material UI', 'NativeWind', 'Zustand', 'SQLite', 'Node.js'];
 
 export default function App() {
@@ -32,7 +46,7 @@ export default function App() {
   return (<>
     <header className="nav">
       <a href="#top" className="logo">CC</a>
-      <nav>{['about', 'experience', 'projects', 'skills', 'contact'].map(s => <a key={s} href={`#${s}`}>{s[0].toUpperCase() + s.slice(1)}</a>)}</nav>
+      <nav>{['about', 'experience', 'projects', 'shopify', 'skills', 'contact'].map(s => <a key={s} href={`#${s}`}>{s[0].toUpperCase() + s.slice(1)}</a>)}</nav>
       <button className="toggle" aria-label="Toggle theme" onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>{theme === 'dark' ? '☀' : '☾'}</button>
     </header>
     <main id="top">
@@ -68,6 +82,17 @@ export default function App() {
           <article className="card" key={p.name}><h4>{p.name}</h4><p>{p.desc}</p>
             <div className="tags">{p.tags.map(t => <span key={t}>{t}</span>)}</div>
             <a className="repo" href={p.url} target="_blank" rel="noreferrer">View on GitHub →</a></article>))}</div>
+      </section>
+
+      <section id="shopify" lang="es"><h3>Portafolio Shopify</h3>
+        <p className="muted">Tres tiendas demo construidas desde cero sobre temas Online Store 2.0, cada una en un rubro distinto. Contraseña de las tiendas: disponible a pedido.</p>
+        <div className="shop-grid">{shopifyStores.map(st => (
+          <article className="card shop" key={st.name}>
+            <a href={st.url} target="_blank" rel="noreferrer" className="shot"><img src={st.img} alt={`Portada de la tienda ${st.name}`} loading="lazy" width={1200} height={670}/></a>
+            <p className="eyebrow small">{st.niche}</p><h4>{st.name}</h4><p>{st.desc}</p>
+            <div className="links"><a className="repo" href={st.url} target="_blank" rel="noreferrer">Ver tienda →</a><a className="repo" href={st.repo} target="_blank" rel="noreferrer">Código en GitHub →</a></div>
+          </article>))}</div>
+        <div className="tags">{shopifySkills.map(t => <span key={t}>{t}</span>)}</div>
       </section>
 
       <section id="skills"><h3>Skills</h3>

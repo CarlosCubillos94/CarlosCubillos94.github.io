@@ -28,3 +28,10 @@ footer{text-align:center;color:var(--muted);padding:2rem;font-size:.9rem}
 @media (max-width:640px){.nav nav{display:none}.hero{padding:4rem 0 3rem}}
 .repo{display:inline-block;margin-top:1rem;font-weight:600}
 .btn.world{border-color:var(--accent);color:var(--accent);background:color-mix(in srgb,var(--accent) 10%,transparent)}.btn.world:hover{background:var(--accent);color:#fff}
+.shop-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:1rem;margin-top:1rem}
+.shop .shot{display:block;margin:-1.4rem -1.4rem 1rem;border-radius:14px 14px 0 0;overflow:hidden;border-bottom:1px solid var(--border)}
+.shop img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;object-position:top;transition:transform .4s cubic-bezier(.23,1,.32,1)}
+.shop:hover img{transform:scale(1.03)}.eyebrow.small{font-size:.75rem;margin:0 0 .2rem}
+.shop .links{display:flex;gap:1rem;flex-wrap:wrap}.shop .links .repo{min-height:44px;display:inline-flex;align-items:center;margin-top:.5rem}
+@media (prefers-reduced-motion:reduce){.shop img{transition:none}.shop:hover img{transform:none}}
+.shop{display:flex;flex-direction:column}.shop .links{margin-top:auto;padding-top:.5rem;column-gap:1.2rem;row-gap:0}.shop .links .repo{margin-top:0}
