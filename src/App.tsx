@@ -24,13 +24,13 @@ const projects = [
 const shopifyStores = [
   { name: 'Atacama Wear', niche: 'Ropa outdoor', img: '/shopify/atacama-wear.webp',
     desc: 'Tienda de ropa con estética editorial oscura, inspirada en Satisfy y en la grilla de District Vision. Drops limitados, fichas de producto legibles y cajón de carrito instantáneo.',
-    url: 'https://atacama-wear-demo.myshopify.com', repo: 'https://github.com/CarlosCubillos94/shopify-demo-theme' },
+    url: 'https://atacama-wear-demo.myshopify.com' },
   { name: 'Maqui Skin', niche: 'Skincare', img: '/shopify/maqui-skin.webp',
     desc: 'Skincare chileno con un diseño claro y minimalista. Rutinas y packs (bundles), quiz de piel y una tipografía serif que transmite calma.',
-    url: 'https://maqui-skin-demo.myshopify.com', repo: 'https://github.com/CarlosCubillos94/shopify-maqui-skin' },
+    url: 'https://maqui-skin-demo.myshopify.com' },
   { name: 'Tostaduría Cerro Alegre', niche: 'Café de especialidad', img: '/shopify/cerro-alegre.webp',
     desc: 'Tostaduría de Valparaíso con un estilo retro y colorido. Suscripciones con descuento, quiz para encontrar tu café y kits de regalo.',
-    url: 'https://cerro-alegre-demo.myshopify.com', repo: 'https://github.com/CarlosCubillos94/shopify-cerro-alegre' },
+    url: 'https://cerro-alegre-demo.myshopify.com' },
 ];
 
 const shopifySkills = ['Online Store 2.0 · Liquid', 'Secciones a medida', 'Micro-interacciones estilo Emil Kowalski', 'Cajón de carrito instantáneo', 'Feedback al agregar al carrito', 'Aparición al hacer scroll', 'Accesibilidad AA', 'Áreas táctiles de 44 px', 'Movimiento reducido', 'Localización en español y CLP', 'Importación de catálogo CSV', 'Foco en rendimiento'];
@@ -91,7 +91,7 @@ export default function App() {
           <article className="card shop" key={st.name}>
             <a href={st.url} target="_blank" rel="noreferrer" className="shot"><img src={st.img} alt={`Portada de la tienda ${st.name}`} loading="lazy" width={1200} height={670}/></a>
             <p className="eyebrow small">{st.niche}</p><h4>{st.name}</h4><p>{st.desc}</p>
-            <div className="links"><a className="repo" href={st.url} target="_blank" rel="noreferrer">Ver tienda →</a><a className="repo" href={st.repo} target="_blank" rel="noreferrer">Código en GitHub →</a></div>
+            <div className="links"><a className="repo" href={st.url} target="_blank" rel="noreferrer">Ver tienda →</a></div>
           </article>))}</div>
         <div className="tags">{shopifySkills.map(t => <span key={t}>{t}</span>)}</div>
       </section>
