@@ -7,12 +7,14 @@ const links = {
 };
 
 const experience = [
+  { company: 'BC Tecnología', role: 'Mobile Developer (Consulting)', period: 'Aug 2026 – Present',
+    points: ['React Native mobile development for an enterprise client.'] },
   { company: 'Telefónica Hispam', role: 'Web & Mobile Specialist Engineer', period: 'Oct 2022 – Jun 2026',
-    points: ['Helped migrate the Mi Movistar app from NativeScript to React Native.', 'Built the Movistar Pass security module.', 'Tech lead on Mi Movistar Empresas.'] },
-  { company: 'Reflex Chile (own startup)', role: 'React Native & Mobile Developer', period: 'May 2022 – Present',
-    points: ['Built a mobile app backed by Firebase.', "Won PUCV's “Emprende tu Tesis” fund."] },
+    points: ['Tech lead of the team behind the Mi Movistar Empresas business app in Chile.', 'Designed and built KeyPass/Movistar Pass, an identity validation module rolled out in several Latin American countries.', 'Took part in migrating the Mi Movistar app from NativeScript to React Native.', "Core team member of Movistar's regional design system; tests with Jest and React Testing Library."] },
+  { company: 'Reflex Chile (own startup)', role: 'Founder & Technical Lead', period: 'May 2022 – Present',
+    points: ['Sole technical lead of the MVP: React Native app and Next.js web with a PostgreSQL/Prisma backend and JWT auth.', "Won PUCV's “Emprende tu Tesis” fund."] },
   { company: 'WiTi Chile', role: 'Software Engineer', period: 'Aug 2021 – Oct 2022',
-    points: ['Developed web applications with React.js.'] },
+    points: ['Built web applications with React.js, styled-components and Material UI.'] },
 ];
 
 const projects = [
@@ -35,7 +37,7 @@ const shopifyStores = [
 
 const shopifySkills = ['Online Store 2.0 · Liquid', 'Secciones a medida', 'Micro-interacciones estilo Emil Kowalski', 'Cajón de carrito instantáneo', 'Feedback al agregar al carrito', 'Aparición al hacer scroll', 'Accesibilidad AA', 'Áreas táctiles de 44 px', 'Movimiento reducido', 'Localización en español y CLP', 'Importación de catálogo CSV', 'Foco en rendimiento'];
 
-const skills = ['React', 'React Native', 'Expo', 'TypeScript', 'JavaScript', 'Next.js', 'Firebase', 'Material UI', 'NativeWind', 'Zustand', 'SQLite', 'Node.js'];
+const skills = ['React', 'React Native', 'Expo', 'TypeScript', 'JavaScript', 'Next.js', 'Shopify · Liquid / OS 2.0', 'Hydrogen', 'Checkout UI Extensions', 'Node.js', 'PostgreSQL · Prisma', 'Cloud deployment', 'Jest · RTL', 'SSO / Auth on mobile', 'NestJS (in progress)'];
 
 export default function App() {
   const [theme, setTheme] = useState<'dark' | 'light'>(() =>
@@ -53,18 +55,20 @@ export default function App() {
       <section className="hero">
         <p className="eyebrow">Software Engineer · Chile</p>
         <h1>Carlos Cubillos</h1>
-        <h2>Senior Mobile &amp; Web Engineer <span>(React / React Native)</span></h2>
-        <p className="lead">I build web and mobile products with React and React Native, from scoping to production.</p>
+        <h2>Senior Mobile &amp; Web Engineer <span>(React / React Native / Shopify)</span></h2>
+        <p className="lead">I build web and mobile products with React, React Native, Next.js and Shopify, from scoping to production.</p>
         <div className="cta">
           <a className="btn primary" href={`mailto:${links.email}`}>Get in touch</a>
           <a className="btn world" href="https://carloscubillos94.github.io/world/" target="_blank" rel="noreferrer">🚙 Explore my 3D world →</a>
           <a className="btn" href={links.github} target="_blank" rel="noreferrer">GitHub</a>
           <a className="btn" href={links.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>
+          <a className="btn" href="/CV_Carlos_Cubillos_EN.pdf" download>Download CV (EN)</a>
+          <a className="btn" href="/CV_Carlos_Cubillos_ES.pdf" download>CV (ES)</a>
         </div>
       </section>
 
       <section id="about"><h3>About</h3>
-        <p>I'm a software engineer based in Chile focused on React and React Native. At Telefónica Hispam I helped migrate the Mi Movistar app from NativeScript to React Native, built the Movistar Pass security module and served as tech lead on Mi Movistar Empresas. I also founded Reflex Chile, whose Firebase-backed mobile app won PUCV's “Emprende tu Tesis” fund.</p>
+        <p>I'm a software engineer based in Chile with 5+ years building web and mobile products with React, React Native and Next.js, plus 2 years of Shopify work (Liquid, Online Store 2.0, Hydrogen, Checkout UI Extensions). I've shipped 3 apps to the App Store and Google Play, including SSO and authentication flows. At Telefónica Hispam I was tech lead on Mi Movistar Empresas, built the KeyPass/Movistar Pass identity module and took part in migrating Mi Movistar to React Native. I also founded Reflex Chile, where I was the sole technical lead of the MVP.</p>
         <div className="card edu"><strong>Education</strong>
           <p>Ingeniería de Ejecución en Informática (Computer Science Engineering)<br/><span className="muted">Pontificia Universidad Católica de Valparaíso (PUCV) · 2018 – 2022</span></p></div>
       </section>
